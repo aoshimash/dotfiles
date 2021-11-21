@@ -1,0 +1,5 @@
+alias grep='grep --color=auto'
+alias k='kubectl'
+alias ksec='kubesec'
+alias wk='watch kubectl'
+alias ls='ls -G'
