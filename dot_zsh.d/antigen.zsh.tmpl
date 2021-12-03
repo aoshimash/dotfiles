@@ -1,4 +1,8 @@
+{{- if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) }}
 source /opt/homebrew/share/antigen/antigen.zsh
+{{- else if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "amd64")) }}
+source /usr/local/share/antigen/antigen.zsh
+{{- end }}
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
