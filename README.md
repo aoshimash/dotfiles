@@ -11,7 +11,7 @@ My macOS dotfiles, managed by [chezmoi](https://github.com/twpayne/chezmoi).
 
 ### Install requirements
 
-You can get these software with this script.
+You can get these softwares with this script.
 
 ```
 # Install Homebrew (If you haven't installed command line tools yet, this command will install it as well.)
