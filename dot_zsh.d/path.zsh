@@ -4,5 +4,6 @@ path=(
   $HOME/bin
   $path
   $HOME/.krew/bin
-  $HOME/.pub-cache/bin
+  $HOME/.rd/bin # for Rancher Desktop
+  $HOME/.pub-cache/bin # for flutterfire_cli
 )
