@@ -4,4 +4,5 @@ path=(
   $HOME/bin
   $path
   $HOME/.krew/bin
+  $GOPATH/bin
 )
