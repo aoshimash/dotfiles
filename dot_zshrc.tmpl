@@ -1,11 +1,11 @@
 source ~/.zsh.d/shellenv.zsh
 source ~/.zsh.d/options.zsh
 source ~/.zsh.d/keybinds.zsh
-source ~/.zsh.d/path.zsh
 source ~/.zsh.d/aliases.zsh
 source ~/.zsh.d/env.zsh
 source ~/.zsh.d/antigen.zsh
 source ~/.zsh.d/fzf.zsh
+source ~/.zsh.d/path.zsh
 
 {{- if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) }}
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
