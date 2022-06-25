@@ -1,9 +1,12 @@
 typeset -U path
 
 path=(
-  $HOME/bin
   $path
+  $HOME/bin
   $HOME/.krew/bin
   $HOME/.rd/bin # for Rancher Desktop
   $GOPATH # for golang
+  $HOME/.cargo/bin
+  $HOME/opt/anaconda3/bin
+  $HOME/.pub-cache/bin
 )
