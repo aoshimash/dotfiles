@@ -9,4 +9,6 @@ path=(
   $HOME/.cargo/bin
   $HOME/opt/anaconda3/bin
   $HOME/.pub-cache/bin
+  $(brew --prefix)/share/google-cloud-sdk/path.zsh.inc # for gcloud
+  $(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc # for gcloud
 )
