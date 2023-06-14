@@ -7,8 +7,4 @@ source ~/.zsh.d/antigen.zsh
 source ~/.zsh.d/fzf.zsh
 source ~/.zsh.d/path.zsh
 
-{{- if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) }}
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
-{{- else if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "amd64")) }}
-. /usr/local/opt/asdf/libexec/asdf.sh
-{{- end }}
