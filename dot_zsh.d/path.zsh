@@ -4,7 +4,6 @@ path=(
   $path
   $HOME/bin
   $HOME/.krew/bin
-  $HOME/.rd/bin # for Rancher Desktop
   $GOPATH/bin # for golang
   $HOME/.cargo/bin
   $HOME/opt/anaconda3/bin
