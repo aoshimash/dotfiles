@@ -1,6 +1,7 @@
 typeset -U path
 
 path=(
+  $(aqua root-dir)/bin # for aqua
   $path
   $HOME/bin
   $HOME/.krew/bin
@@ -12,5 +13,4 @@ path=(
   $(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc # for gcloud
   $(brew --prefix)/opt/openjdk/bin
   $(brew --prefix)/opt/dart@2.12/bin
-  $(aqua root-dir)/bin # for aqua
 )
