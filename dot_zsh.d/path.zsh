@@ -13,5 +13,5 @@ path=(
   $(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc # for gcloud
   $(brew --prefix)/opt/openjdk/bin
   $(brew --prefix)/opt/dart@2.12/bin
-  ${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin # for aqua
+  $(aqua root-dir)/bin # for aqua
 )
