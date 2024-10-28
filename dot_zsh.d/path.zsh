@@ -5,7 +5,7 @@ path=(
   $path
   $HOME/bin
   $HOME/.krew/bin
-  $GOPATH/bin # for golang
+  $GOPATH/bin
   $HOME/.cargo/bin
   $HOME/opt/anaconda3/bin
   $HOME/.pub-cache/bin
