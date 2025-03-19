@@ -13,4 +13,5 @@ path=(
   $(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc # for gcloud
   $(brew --prefix)/opt/openjdk/bin
   $(brew --prefix)/opt/dart@2.12/bin
+  $NPM_CONFIG_PREFIX/bin # for aqua https://aquaproj.github.io/docs/reference/nodejs-support/
 )
