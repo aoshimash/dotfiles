@@ -14,4 +14,5 @@ path=(
   $(brew --prefix)/opt/openjdk/bin
   $(brew --prefix)/opt/dart@2.12/bin
   $NPM_CONFIG_PREFIX/bin # for aqua https://aquaproj.github.io/docs/reference/nodejs-support/
+  $HOME/.local/bin # for pipx and other local installs
 )
