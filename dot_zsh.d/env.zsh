@@ -8,4 +8,7 @@ if [[ "$(hostname)" == "JPN-2025-020" ]]; then
   export GOOGLE_CLOUD_PROJECT="nulab-developer-platform"
   export GOOGLE_CLOUD_LOCATION="global"
   export GOOGLE_GENAI_USE_VERTEXAI=true
+  export CLAUDE_CODE_USE_BEDROCK=1
+  export AWS_PROFILE=Nulab-Platform_Administrators
+  export AWS_REGION='us-east-1'
 fi
