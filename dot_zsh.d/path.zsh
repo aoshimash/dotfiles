@@ -4,6 +4,7 @@ path=(
   $(aqua root-dir)/bin # for aqua
   $path
   $HOME/bin
+  $HOME/.local/bin
   $HOME/.krew/bin
   $GOPATH/bin
   $HOME/.cargo/bin
