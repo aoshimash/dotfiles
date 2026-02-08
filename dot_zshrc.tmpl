@@ -6,5 +6,7 @@ source ~/.zsh.d/env.zsh
 source ~/.zsh.d/antigen.zsh
 source ~/.zsh.d/fzf.zsh
 source ~/.zsh.d/path.zsh
-source ~/.zsh.d/kiro.zsh
+if [[ "$(hostname)" == "JPN-2025-020" ]]; then
+  source ~/.zsh.d/kiro.zsh
+fi
 eval "$(direnv hook zsh)"
