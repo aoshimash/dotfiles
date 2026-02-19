@@ -4,7 +4,17 @@ model=$(echo "$input" | jq -r '.model.display_name')
 cwd=$(echo "$input" | jq -r '.workspace.current_dir')
 context_pct=$(echo "$input" | jq -r '.context_window.used_percentage // 0' | xargs printf '%.0f')
 dir=$(basename "$cwd")
-branch=$(git -C "$cwd" --no-optional-locks rev-parse --abbrev-ref HEAD 2>/dev/null)
+# Detect branch handling git worktrees correctly
+# git-dir is worktree-specific (e.g. .git/worktrees/<name> for linked worktrees)
+_git_dir=$(git -C "$cwd" --no-optional-locks rev-parse --git-dir 2>/dev/null)
+if [ -n "$_git_dir" ]; then
+  case "$_git_dir" in /*) ;; *) _git_dir="$cwd/$_git_dir" ;; esac
+  _head=$(cat "$_git_dir/HEAD" 2>/dev/null)
+  case "$_head" in
+    "ref: refs/heads/"*) branch="${_head#ref: refs/heads/}" ;;
+    *) branch=$(git -C "$cwd" --no-optional-locks rev-parse --short HEAD 2>/dev/null) ;;
+  esac
+fi
 
 # colors
 green=$(printf '\033[32m')
