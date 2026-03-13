@@ -6,4 +6,5 @@ alias ls='ls -G'
 
 if [[ "$(hostname)" == "JPN-2025-020" ]]; then
   alias gemini='/Users/aoshima/.local/share/npm-global/bin/gemini'
+  alias bee='bun run bee'
 fi
