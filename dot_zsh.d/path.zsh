@@ -7,6 +7,7 @@ path=(
   $HOME/.local/bin
   $HOME/.krew/bin
   $GOPATH/bin
+  $HOME/.bun/bin
   $HOME/.cargo/bin
   $HOME/opt/anaconda3/bin
   $HOME/.pub-cache/bin
